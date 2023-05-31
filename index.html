@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="TalkGPT - Converse com o ChatGPT por voz">
+  <meta name="keywords" content="TalkGPT, ChatGPT, conversa por voz, assistente virtual">
+  <meta name="author" content="Matheus Teixeira (@aeusteixeira)">
+  <title>TalkGPT - Converse com o ChatGPT por voz</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <h1>TalkGPT - Conversor de Áudio para Texto</h1>
+  <div class="radio-wrapper">
+    <div class="radio" id="radioButton"></div>
+  </div>
+  <button onclick="startRecording()">Iniciar Gravação</button>
+  <button onclick="stopRecording()">Parar Gravação</button>
+  <button onclick="speakTranscription()">Reproduzir Transcrição</button>
+  <button onclick="saveTranscription()">Salvar Transcrição</button>
+  <select id="voiceSelect">
+    <!-- As opções de vozes serão adicionadas dinamicamente usando JavaScript -->
+  </select>
+
+  <div class="output" id="output"></div>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
